@@ -32,8 +32,14 @@
         </div>
         <div id="result"></div>
     </div>
+    <div>
+        <footer class="footer">
+            &copy; <span id="year"></span> Electrical Calculator. Hak Cipta Dilindungi.
+        </footer>
+    </div>
 
     <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
         function calculate() {
             const v = parseFloat(document.getElementById("v").value);
             const i = parseFloat(document.getElementById("i").value);
